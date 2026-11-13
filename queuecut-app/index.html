@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QueueCut - Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="login-container">
+<link rel="manifest" href="manifest.json" />
+<meta name="apple-mobile-web-app-capable" content="yes" />      
+      <!-- Brand Header -->
+      <div class="brand-logo">
+        <div class="speed-lines">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="logo-text">
+          <span class="q">Queue</span><span class="c">Cut</span>
+        </div>
+      </div>
+      <p class="tagline">
+        <span class="green">Cut the Queue,</span> <span class="dark">Keep Your Break!</span>
+      </p>
+
+      <!-- STEP 1: Choose School -->
+      <div id="step-1" class="step-card">
+        <p class="step-indicator">Step 1 of 2 • School Portal</p>
+        <h2>Select Your School</h2>
+        
+        <label for="school-select">Registered Campus</label>
+        <select id="school-select">
+          <option value="GEMS World Academy - Dubai">GEMS World Academy - Dubai</option>
+          <option value="GEMS Wellington International">GEMS Wellington International</option>
+          <option value="GEMS Modern Academy">GEMS Modern Academy</option>
+        </select>
+
+        <button class="btn-primary" onclick="goToStep2()">Continue →</button>
+      </div>
+
+      <!-- STEP 2: Student Name & Create Password -->
+      <div id="step-2" class="step-card hidden">
+        <p class="step-indicator" id="selected-school-badge">GEMS World Academy</p>
+        <h2>Create Student Access</h2>
+
+        <label for="student-name">Full Name</label>
+        <input type="text" id="student-name" placeholder="e.g., Alex Carter" required />
+
+        <label for="student-id">Student / Staff ID</label>
+        <input type="text" id="student-id" placeholder="e.g., GWA-2948" required />
+
+        <label for="student-pass">Create App Password</label>
+        <input type="password" id="student-pass" placeholder="••••••••" required />
+
+        <button class="btn-primary btn-lime" onclick="completeLogin()">Enter QueueCut</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
