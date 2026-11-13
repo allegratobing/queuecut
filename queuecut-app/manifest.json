@@ -1,8 +1,0 @@
-{
-  "name": "QueueCut",
-  "short_name": "QueueCut",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#F8FAF0",
-  "theme_color": "#0F3D2E"
-}
